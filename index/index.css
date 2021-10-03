@@ -4,10 +4,23 @@ body {
   background-color: black;
 }
 
+@keyframes flicker {
+  0% {opacity: 100%;}
+  30% {opacity: 100%;}
+  33% {opacity: 0%;}
+  35% {opacity: 100%;}
+  70% {opacity: 100%;}
+  75% {opacity: 0%;}
+  80% {opacity: 100%;}
+  100% {opacity: 100%;}
+}
+
 .titletext {
   text-align: center;
-  font-size: 12;
+  font-size: 30;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  margin-top: 0.5em;
+  font-weight: 800;
+  margin-top: 2em;
+  animation: flicker 7s infinite forwards;
 }
